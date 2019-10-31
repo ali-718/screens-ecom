@@ -35,7 +35,6 @@ export default class Login extends Component {
             backgroundColor: "white",
             marginTop: -50,
             alignSelf: "center",
-            elevation: 4,
             shadowColor: "#000",
             shadowOffset: {
               width: 0,
@@ -45,9 +44,12 @@ export default class Login extends Component {
             shadowRadius: 9.11,
             borderRadius: 10,
             paddingTop: 30,
-            paddingBottom: 30,
+            paddingBottom: 60,
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            borderWidth: 2,
+            borderStyle: "solid",
+            borderColor: "gainsboro"
           }}
         >
           <Item
@@ -93,6 +95,7 @@ export default class Login extends Component {
         </View>
         <View style={{ marginTop: -20 }}>
           <TouchableOpacity
+            onPress={() => this.props.navigation.navigate("Home")}
             style={{
               width: "70%",
               alignSelf: "center",
