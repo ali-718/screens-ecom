@@ -9,7 +9,7 @@ import {
     TextInput,
     SafeAreaView, ScrollView
 } from "react-native";
-import { Header, Body, Left, Right } from "native-base";
+import { Header, Body, Left, Right,Icon } from "native-base";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Feather from 'react-native-vector-icons/Feather'
 export default class Signup extends React.Component {
@@ -30,10 +30,16 @@ export default class Signup extends React.Component {
                         <Left style={{ flex: 1 }}>
                             <TouchableOpacity
                                 style={{ width: "20%", height: "100%", justifyContent: "center" }}
+                             
 
                             >
                                 <View style={{ width: 40, height: 40, alignItems: "center", justifyContent: "center", }}>
-                                    <Feather name={"align-justify"} size={25} color={'white'} />
+                                <Icon
+              style={{ fontSize: 25,color:"white" }}
+              active
+              name="bars"
+              type="AntDesign"
+            />
                                 </View>
 
                             </TouchableOpacity>

@@ -34,7 +34,7 @@ export default class Home extends Component {
             marginTop: StatusBar.currentHeight
           }}
         >
-          <View
+          <TouchableOpacity
             style={{
               width: "20%",
               height: 50,
@@ -48,7 +48,7 @@ export default class Home extends Component {
               name="bars"
               type="AntDesign"
             />
-          </View>
+          </TouchableOpacity>
           <View
             style={{
               width: "50%",
