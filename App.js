@@ -4,6 +4,7 @@ import { createAppContainer } from "react-navigation";
 import Login from "./Login";
 import { createStackNavigator } from "react-navigation-stack";
 import Home from "./Home";
+import Shop from "./shop/Shops";
 
 const Stack = createStackNavigator(
   {
@@ -12,11 +13,14 @@ const Stack = createStackNavigator(
     },
     Home: {
       screen: Home
+    },
+    Shop: {
+      screen: Shop
     }
   },
   {
     headerMode: "none",
-    initialRouteName: "Login"
+    initialRouteName: "Home"
   }
 );
 

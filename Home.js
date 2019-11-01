@@ -100,63 +100,38 @@ export default class Home extends Component {
           <View style={{ width: "100%", marginTop: 10, alignItems: "center" }}>
             <View
               style={{
-                width: "80%",
-                borderRadius: 10,
                 height: 50,
-                backgroundColor: "rgba(220,220,220,0.4)",
+                position: "absolute",
+                marginTop: 10,
+                width: "93%",
+                backgroundColor: "white",
+                alignSelf: "center",
+                borderWidth: 1,
                 flexDirection: "row",
-                justifyContent: "center",
-                elevation: 1
+                borderRadius: 5,
+                elevation: 1,
+                alignItems: "center",
+                borderColor: "#dfdfdf"
               }}
             >
               <View
                 style={{
-                  width: "10%",
-                  height: 50,
+                  width: 60,
+                  borderRightWidth: 1,
+                  height: 30,
+                  alignItems: "center",
                   justifyContent: "center",
-                  alignItems: "flex-end"
+                  borderColor: "#dfdfdf"
                 }}
               >
-                <Icon
-                  name="search"
-                  type="FontAwesome"
-                  style={{ fontSize: 20, color: "black" }}
-                />
+                <Icon name="search" type="Feather" />
               </View>
+
               <TextInput
-                style={{
-                  width: "70%",
-                  justifyContent: "center",
-                  paddingLeft: 10
-                }}
-                placeholder="Search"
-                placeholderTextColor="rgba(0,0,0,0.7)"
-                selectionColor="#42C2BF"
-              ></TextInput>
-              <View
-                style={{
-                  width: "20%",
-                  height: 50,
-                  justifyContent: "center",
-                  alignItems: "center"
-                }}
-              >
-                <View
-                  style={{
-                    height: 20,
-                    borderLeftWidth: 0.6,
-                    borderColor: "silver"
-                  }}
-                >
-                  <TouchableOpacity>
-                    <Icon
-                      name="tune"
-                      type="MaterialIcons"
-                      style={{ fontSize: 20, marginLeft: 5, color: "silver" }}
-                    />
-                  </TouchableOpacity>
-                </View>
-              </View>
+                placeholder="search"
+                style={{ marginLeft: 10 }}
+                placeholderTextColor="#7d7d7d"
+              />
             </View>
           </View>
 
