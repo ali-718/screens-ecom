@@ -18,7 +18,8 @@ import {
   Icon,
   CheckBox,
   ListItem,
-  Body
+  Body,
+  Button
 } from "native-base";
 
 export default class Home extends Component {
@@ -72,12 +73,23 @@ export default class Home extends Component {
               height: 50
             }}
           >
-            <Icon
-              style={{ fontSize: 20 }}
-              active
-              name="hearto"
-              type="AntDesign"
-            />
+            <TouchableOpacity
+              style={{
+                backgroundColor: "#ECEFF2",
+                borderRadius: 100,
+                width: 30,
+                height: 30,
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+              <Icon
+                style={{ fontSize: 15 }}
+                active
+                name="hearto"
+                type="AntDesign"
+              />
+            </TouchableOpacity>
           </View>
           <View
             style={{
@@ -87,12 +99,23 @@ export default class Home extends Component {
               height: 50
             }}
           >
-            <Icon
-              style={{ fontSize: 20 }}
-              active
-              name="shoppingcart"
-              type="AntDesign"
-            />
+            <TouchableOpacity
+              style={{
+                backgroundColor: "#ECEFF2",
+                borderRadius: 100,
+                width: 30,
+                height: 30,
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+              <Icon
+                style={{ fontSize: 15 }}
+                active
+                name="shoppingcart"
+                type="AntDesign"
+              />
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -100,10 +123,9 @@ export default class Home extends Component {
           <View style={{ width: "100%", marginTop: 10, alignItems: "center" }}>
             <View
               style={{
-                height: 50,
-                position: "absolute",
+                height: 40,
                 marginTop: 10,
-                width: "93%",
+                width: "90%",
                 backgroundColor: "white",
                 alignSelf: "center",
                 borderWidth: 1,
@@ -124,7 +146,7 @@ export default class Home extends Component {
                   borderColor: "#dfdfdf"
                 }}
               >
-                <Icon name="search" type="Feather" />
+                <Icon name="search" type="Feather" style={{ fontSize: 18 }} />
               </View>
 
               <TextInput
@@ -135,200 +157,409 @@ export default class Home extends Component {
             </View>
           </View>
 
-          <ScrollView
-            horizontal={true}
-            style={{ marginLeft: 10, marginTop: 30 }}
-            showsHorizontalScrollIndicator={false}
-          >
-            <View>
-              <TouchableOpacity
-                style={{ alignItems: "center" }}
-                activeOpacity={0.8}
-              >
-                <ImageBackground
-                  source={{
-                    uri:
-                      "https://cdn.pixabay.com/photo/2017/08/01/11/48/blue-2564660_1280.jpg"
-                  }}
-                  style={{ width: 250, height: 250, alignItems: "flex-start" }}
-                >
-                  <View style={{ alignItems: "flex-end", width: "99%" }}>
-                    <TouchableOpacity>
-                      <Icon
-                        name="favorite-border"
-                        type="MaterialIcons"
-                        style={{ fontSize: 20, color: "black" }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View
-                    style={{
-                      justifyContent: "flex-end",
-                      height: "90%",
-                      width: 240,
-                      alignItems: "flex-start"
-                    }}
-                  >
-                    <Text
-                      style={{
-                        fontSize: 20,
-                        color: "black",
-                        fontWeight: "bold",
-                        marginLeft: 5
-                      }}
-                    >
-                      Stitch
-                    </Text>
-                    <Text
-                      style={{
-                        fontSize: 15,
-                        color: "black",
-                        marginLeft: 5,
-                        marginBottom: 5
-                      }}
-                    >
-                      $88.0
-                    </Text>
-                  </View>
-                </ImageBackground>
-              </TouchableOpacity>
-            </View>
-            <View style={{ marginLeft: 10 }}>
-              <TouchableOpacity
-                style={{ alignItems: "center" }}
-                activeOpacity={0.8}
-              >
-                <ImageBackground
-                  source={{
-                    uri:
-                      "https://cdn.pixabay.com/photo/2018/01/29/17/01/beautiful-3116587_1280.jpg"
-                  }}
-                  style={{ width: 250, height: 250, alignItems: "flex-start" }}
-                >
-                  <View style={{ alignItems: "flex-end", width: "99%" }}>
-                    <TouchableOpacity>
-                      <Icon
-                        name="favorite-border"
-                        type="MaterialIcons"
-                        style={{ fontSize: 20, color: "black" }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View
-                    style={{
-                      justifyContent: "flex-end",
-                      height: "90%",
-                      width: 240,
-                      alignItems: "flex-start"
-                    }}
-                  >
-                    <Text
-                      style={{
-                        fontSize: 20,
-                        color: "black",
-                        fontWeight: "bold",
-                        marginLeft: 5
-                      }}
-                    >
-                      Stitch
-                    </Text>
-                    <Text
-                      style={{
-                        fontSize: 15,
-                        color: "black",
-                        marginLeft: 5,
-                        marginBottom: 5
-                      }}
-                    >
-                      $88.0
-                    </Text>
-                  </View>
-                </ImageBackground>
-              </TouchableOpacity>
-            </View>
-            <View style={{ marginLeft: 10 }}>
-              <TouchableOpacity
-                style={{ alignItems: "center" }}
-                activeOpacity={0.8}
-              >
-                <ImageBackground
-                  source={{
-                    uri:
-                      "https://cdn.pixabay.com/photo/2016/11/29/09/25/beautiful-1868701_1280.jpg"
-                  }}
-                  style={{ width: 250, height: 250, alignItems: "flex-start" }}
-                >
-                  <View style={{ alignItems: "flex-end", width: "99%" }}>
-                    <TouchableOpacity>
-                      <Icon
-                        name="favorite-border"
-                        type="MaterialIcons"
-                        style={{ fontSize: 20, color: "black" }}
-                      />
-                    </TouchableOpacity>
-                  </View>
-                  <View
-                    style={{
-                      justifyContent: "flex-end",
-                      height: "90%",
-                      width: 240,
-                      alignItems: "flex-start"
-                    }}
-                  >
-                    <Text
-                      style={{
-                        fontSize: 20,
-                        color: "black",
-                        fontWeight: "bold",
-                        marginLeft: 5
-                      }}
-                    >
-                      Stitch
-                    </Text>
-                    <Text
-                      style={{
-                        fontSize: 15,
-                        color: "black",
-                        marginLeft: 5,
-                        marginBottom: 5
-                      }}
-                    >
-                      $88.0
-                    </Text>
-                  </View>
-                </ImageBackground>
-              </TouchableOpacity>
-            </View>
-          </ScrollView>
+          <View style={{ width: "100%", height: 200, marginTop: 20 }}>
+            <Image
+              source={{
+                uri:
+                  "https://cdn.pixabay.com/photo/2017/02/25/05/14/shipwreck-2096945_960_720.jpg"
+              }}
+              style={{ width: "100%", height: 200 }}
+            />
+          </View>
 
-          <View style={{ marginTop: 50 }}>
-            <View>
-              <TouchableOpacity
-                style={{ width: "100%", alignItems: "center" }}
-                activeOpacity={0.8}
-              >
-                <Image
-                  source={{
-                    uri:
-                      "https://raw.githubusercontent.com/ali-718/mstore/master/src/Assets/Images/men.jpg"
+          <View
+            style={{
+              width: "100%",
+              marginTop: 20,
+              borderBottomWidth: 0.7,
+              borderStyle: "solid",
+              borderColor: "black",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            <View style={{ width: "90%", flexDirection: "row" }}>
+              <View style={{ width: "40%" }}>
+                <Text
+                  style={{
+                    color: "#3e5a6d",
+                    fontWeight: "bold",
+                    fontSize: 15,
+                    borderBottomWidth: 0.7,
+                    borderStyle: "solid",
+                    borderColor: "#3e5a6d"
                   }}
-                  style={{ width: "90%", height: 100, borderRadius: 10 }}
-                />
-              </TouchableOpacity>
+                >
+                  FEATURED SHOPS
+                </Text>
+              </View>
+              <View style={{ width: "60%", alignItems: "flex-end" }}>
+                <Text style={{ color: "#a4a4a4", fontSize: 15 }}>
+                  View all{" "}
+                </Text>
+              </View>
             </View>
-            <View style={{ marginTop: 20 }}>
-              <TouchableOpacity
-                style={{ width: "100%", alignItems: "center" }}
-                activeOpacity={0.8}
+          </View>
+
+          <View
+            style={{
+              flexDirection: "row",
+              width: "93%",
+              alignSelf: "center",
+              flexDirection: "row",
+              borderWidth: 0,
+              alignItems: "center",
+              flex: 1,
+              paddingVertical: 10,
+              paddingLeft: 2
+            }}
+          >
+            <TouchableOpacity
+              style={{
+                width: "31%",
+                marginRight: 5,
+                height: "100%",
+                flex: 1,
+                alignItems: "center"
+              }}
+            >
+              <View
+                style={{
+                  height: 100,
+                  elevation: 3,
+                  borderWidth: 1,
+                  borderColor: "#f6f6f6",
+                  width: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "white",
+                  overflow: "hidden"
+                }}
               >
                 <Image
-                  source={{
-                    uri:
-                      "https://raw.githubusercontent.com/ali-718/mstore/master/src/Assets/Images/men.jpg"
-                  }}
-                  style={{ width: "90%", height: 100, borderRadius: 10 }}
+                  source={require("./shop/company2.jpg")}
+                  style={{ width: "100%", height: "100%" }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{ width: "100%", flexDirection: "row" }}>
+                <View style={{ width: "70%" }}>
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      color: "#999999",
+                      marginVertical: 5,
+                      alignSelf: "flex-start"
+                    }}
+                  >
+                    Lorem ipsum
+                  </Text>
+                </View>
+                <View style={{ width: "30%", alignItems: "flex-end" }}>
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: 11,
+                      marginVertical: 5,
+                      marginRight: 5
+                    }}
+                  >
+                    50$
+                  </Text>
+                </View>
+              </View>
+            </TouchableOpacity>
+
+            <View
+              style={{
+                width: "31%",
+                marginRight: 5,
+                height: "100%",
+                flex: 1,
+                alignItems: "center"
+              }}
+            >
+              <TouchableOpacity
+                style={{
+                  height: 100,
+                  elevation: 3,
+                  borderWidth: 1,
+                  borderColor: "#f6f6f6",
+                  width: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "white",
+                  overflow: "hidden"
+                }}
+              >
+                <Image
+                  source={require("./shop/company.jpg")}
+                  style={{ width: "100%", height: "100%" }}
+                  resizeMode="contain"
                 />
               </TouchableOpacity>
+              <View style={{ width: "100%", flexDirection: "row" }}>
+                <View style={{ width: "70%" }}>
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      color: "#999999",
+                      marginVertical: 5,
+                      alignSelf: "flex-start"
+                    }}
+                  >
+                    Lorem ipsum
+                  </Text>
+                </View>
+                <View style={{ width: "30%", alignItems: "flex-end" }}>
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: 11,
+                      marginVertical: 5,
+                      marginRight: 5
+                    }}
+                  >
+                    50$
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={{
+                width: "31%",
+                marginRight: 5,
+                height: "100%",
+                flex: 1,
+                alignItems: "center"
+              }}
+            >
+              <TouchableOpacity
+                style={{
+                  height: 100,
+                  elevation: 3,
+                  borderWidth: 1,
+                  borderColor: "#f6f6f6",
+                  width: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "white",
+                  overflow: "hidden"
+                }}
+              >
+                <Image
+                  source={require("./shop/NationalTrust.png")}
+                  style={{ width: "100%", height: "100%" }}
+                  resizeMode="contain"
+                />
+              </TouchableOpacity>
+              <View style={{ width: "100%", flexDirection: "row" }}>
+                <View style={{ width: "70%" }}>
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      color: "#999999",
+                      marginVertical: 5,
+                      alignSelf: "flex-start"
+                    }}
+                  >
+                    Lorem ipsum
+                  </Text>
+                </View>
+                <View style={{ width: "30%", alignItems: "flex-end" }}>
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: 11,
+                      marginVertical: 5,
+                      marginRight: 5
+                    }}
+                  >
+                    50$
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+
+          <View
+            style={{
+              flexDirection: "row",
+              width: "93%",
+              alignSelf: "center",
+              flexDirection: "row",
+              borderWidth: 0,
+              alignItems: "center",
+              flex: 1,
+              paddingVertical: 10,
+              paddingLeft: 2
+            }}
+          >
+            <TouchableOpacity
+              style={{
+                width: "31%",
+                marginRight: 5,
+                height: "100%",
+                flex: 1,
+                alignItems: "center"
+              }}
+            >
+              <View
+                style={{
+                  height: 100,
+                  elevation: 3,
+                  borderWidth: 1,
+                  borderColor: "#f6f6f6",
+                  width: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "white",
+                  overflow: "hidden"
+                }}
+              >
+                <Image
+                  source={require("./shop/company2.jpg")}
+                  style={{ width: "100%", height: "100%" }}
+                  resizeMode="contain"
+                />
+              </View>
+              <View style={{ width: "100%", flexDirection: "row" }}>
+                <View style={{ width: "70%" }}>
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      color: "#999999",
+                      marginVertical: 5,
+                      alignSelf: "flex-start"
+                    }}
+                  >
+                    Lorem ipsum
+                  </Text>
+                </View>
+                <View style={{ width: "30%", alignItems: "flex-end" }}>
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: 11,
+                      marginVertical: 5,
+                      marginRight: 5
+                    }}
+                  >
+                    50$
+                  </Text>
+                </View>
+              </View>
+            </TouchableOpacity>
+
+            <View
+              style={{
+                width: "31%",
+                marginRight: 5,
+                height: "100%",
+                flex: 1,
+                alignItems: "center"
+              }}
+            >
+              <TouchableOpacity
+                style={{
+                  height: 100,
+                  elevation: 3,
+                  borderWidth: 1,
+                  borderColor: "#f6f6f6",
+                  width: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "white",
+                  overflow: "hidden"
+                }}
+              >
+                <Image
+                  source={require("./shop/company.jpg")}
+                  style={{ width: "100%", height: "100%" }}
+                  resizeMode="contain"
+                />
+              </TouchableOpacity>
+              <View style={{ width: "100%", flexDirection: "row" }}>
+                <View style={{ width: "70%" }}>
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      color: "#999999",
+                      marginVertical: 5,
+                      alignSelf: "flex-start"
+                    }}
+                  >
+                    Lorem ipsum
+                  </Text>
+                </View>
+                <View style={{ width: "30%", alignItems: "flex-end" }}>
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: 11,
+                      marginVertical: 5,
+                      marginRight: 5
+                    }}
+                  >
+                    50$
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={{
+                width: "31%",
+                marginRight: 5,
+                height: "100%",
+                flex: 1,
+                alignItems: "center"
+              }}
+            >
+              <TouchableOpacity
+                style={{
+                  height: 100,
+                  elevation: 3,
+                  borderWidth: 1,
+                  borderColor: "#f6f6f6",
+                  width: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "white",
+                  overflow: "hidden"
+                }}
+              >
+                <Image
+                  source={require("./shop/NationalTrust.png")}
+                  style={{ width: "100%", height: "100%" }}
+                  resizeMode="contain"
+                />
+              </TouchableOpacity>
+              <View style={{ width: "100%", flexDirection: "row" }}>
+                <View style={{ width: "70%" }}>
+                  <Text
+                    style={{
+                      fontSize: 11,
+                      color: "#999999",
+                      marginVertical: 5,
+                      alignSelf: "flex-start"
+                    }}
+                  >
+                    Lorem ipsum
+                  </Text>
+                </View>
+                <View style={{ width: "30%", alignItems: "flex-end" }}>
+                  <Text
+                    style={{
+                      fontWeight: "bold",
+                      fontSize: 11,
+                      marginVertical: 5,
+                      marginRight: 5
+                    }}
+                  >
+                    50$
+                  </Text>
+                </View>
+              </View>
             </View>
           </View>
 
