@@ -5,6 +5,7 @@ import Login from "./Login";
 import { createStackNavigator } from "react-navigation-stack";
 import Home from "./Home";
 import Shop from "./shop/Shops";
+import TabBar from "./Tabbar";
 
 const Stack = createStackNavigator(
   {
@@ -16,11 +17,14 @@ const Stack = createStackNavigator(
     },
     Shop: {
       screen: Shop
+    },
+    Tabbar: {
+      screen: TabBar
     }
   },
   {
     headerMode: "none",
-    initialRouteName: "Home"
+    initialRouteName: "Tabbar"
   }
 );
 

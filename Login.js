@@ -95,7 +95,6 @@ export default class Login extends Component {
         </View>
         <View style={{ marginTop: -20 }}>
           <TouchableOpacity
-            onPress={() => this.props.navigation.navigate("Home")}
             style={{
               width: "70%",
               alignSelf: "center",
